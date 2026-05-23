@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;600&display=swap');
+
+.font-serif {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Enhances the custom dotted line contrast matching the original image */
+.border-dotted {
+  border-style: dotted;
+  border-width: 0 0 2px 0;
+}

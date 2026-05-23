@@ -1,0 +1,96 @@
+<div class="min-h-screen bg-neutral-950 text-stone-100 font-sans p-4 md:p-8 selection:bg-amber-500 selection:text-black">
+  
+  <header class="text-center my-8 max-w-xl mx-auto border-b ">
+   <div class="inline-block p-3 border-2 border-amber-500 rounded-full w-16 h-16">
+  <img src="logo.png" alt="Logo" class="w-full h-full object-contain">
+</div>
+    <h1 class="text-4xl md:text-5xl font-serif tracking-widest text-amber-500 font-bold">KAAKE & COFFEE</h1>
+    <p class="text-stone-400 tracking-widest text-xs uppercase mt-1">House</p>
+    <p class="italic text-amber-400/80 font-serif mt-3 text-lg">"Good Food, Good Mood"</p>
+  </header>
+
+  <main class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
+    
+    <section class="space-y-6 bg-neutral-900/40 p-6 rounded-xl border border-stone-800">
+      <div class="flex items-center justify-between border-b border-amber-500/30 pb-2 mb-4">
+        <span class="text-amber-500">🌾</span>
+        <h2 class="text-2xl font-serif tracking-wider text-amber-500 font-semibold text-center uppercase">Lebanese Kaake</h2>
+        <span class="text-amber-500">🌾</span>
+      </div>
+
+      <div *ngFor="let item of kaakeItems" class="group">
+        <div class="flex justify-between items-baseline gap-2">
+          <h3 class="font-serif tracking-wide text-stone-200 group-hover:text-amber-400 transition-colors">{{ item.name }}</h3>
+          <div class="flex-grow border-b border-dotted border-stone-700 mx-2"></div>
+          <span class="text-amber-500 font-mono font-bold">{{ item.price }}</span>
+        </div>
+        <p *ngIf="item.description" class="text-stone-400 text-sm mt-1 font-light leading-relaxed">{{ item.description }}</p>
+      </div>
+
+  
+    </section>
+
+    <div class="space-y-8">
+      <section class="space-y-4 bg-neutral-900/40 p-6 rounded-xl border border-stone-800">
+        <div class="flex items-center justify-between border-b border-amber-500/30 pb-2 mb-4">
+          <span class="text-amber-500">☕</span>
+          <h2 class="text-2xl font-serif tracking-wider text-amber-500 font-semibold text-center uppercase">Hot Beverages</h2>
+          <span class="text-amber-500">☕</span>
+        </div>
+        <div *ngFor="let item of hotBeverages" class="flex justify-between items-baseline gap-2">
+          <h3 class="text-stone-200">{{ item.name }}</h3>
+          <div class="flex-grow border-b border-dotted border-stone-700"></div>
+          <span class="text-amber-500 font-mono font-bold">{{ item.price }}</span>
+        </div>
+      </section>
+
+      <section class="space-y-4 bg-neutral-900/40 p-6 rounded-xl border border-stone-800">
+        <div class="flex items-center justify-between border-b border-amber-500/30 pb-2 mb-4">
+          <span class="text-amber-500">🥤</span>
+          <h2 class="text-2xl font-serif tracking-wider text-amber-500 font-semibold text-center uppercase">Cold Drinks</h2>
+          <span class="text-amber-500">🥤</span>
+        </div>
+        <div *ngFor="let item of coldDrinks" class="flex justify-between items-baseline gap-2">
+          <h3 class="text-stone-200">{{ item.name }}</h3>
+          <div class="flex-grow border-b border-dotted border-stone-700"></div>
+          <span class="text-amber-500 font-mono font-bold">{{ item.price }}</span>
+        </div>
+      </section>
+
+    
+    </div>
+
+    <div class="space-y-8">
+      <section class="space-y-4 bg-neutral-900/40 p-6 rounded-xl border border-stone-800">
+        <div class="flex items-center justify-between border-b border-amber-500/30 pb-2 mb-4">
+          <span class="text-amber-500">💨</span>
+          <h2 class="text-2xl font-serif tracking-wider text-amber-500 font-semibold text-center uppercase">Arguile</h2>
+          <span class="text-amber-500">💨</span>
+        </div>
+        <div *ngFor="let item of arguileItems" class="flex justify-between items-baseline gap-2">
+          <h3 class="text-stone-200">{{ item.name }}</h3>
+          <div class="flex-grow border-b border-dotted border-stone-700"></div>
+          <span class="text-amber-500 font-mono font-bold">{{ item.price }}</span>
+        </div>
+      </section>
+
+     
+
+      
+    </div>
+
+  </main>
+  <section class="p-6 border border-amber-500/20 bg-neutral-900/60 rounded-xl text-center space-y-4">
+        <div class="text-xs tracking-widest uppercase text-amber-400 font-semibold">
+          Fresh Ingredients • Premium Quality
+        </div>
+        <div class="text-stone-400 text-sm space-y-1">
+          <p>📍 Wata Houb - Tannourine, Lebanon</p>
+          <p>📞 +961 70 171 891</p>
+          <p>🕒 Open Daily: 8 AM - 12 AM</p>
+        </div>
+        <div class="pt-2 text-amber-500 font-serif italic text-sm">
+          Thank You! We appreciate your visit.
+        </div>
+      </section>
+</div>
