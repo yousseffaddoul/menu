@@ -1,7 +1,6 @@
 import { Routes } from '@angular/router';
-import { Menu } from './menu/menu';
 
 export const routes: Routes = [
    
-    {path: '', component: Menu}
+    {path: '', loadComponent: () => import('./menu/menu').then(m => m.Menu)},
 ];
