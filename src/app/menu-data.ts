@@ -21,7 +21,7 @@ export const LEBANESE_KAAKE: MenuItem[] = [
 ];
 
 export const HOT_BEVERAGES: MenuItem[] = [
-  { name: 'Cofee', price: '$1.00' },
+  { name: 'Coffee', price: '$1.00' },
   { name: 'Nescafee', price: '$1.50' },
   { name: 'Cappuccino', price: '$1.50' },
 ];
